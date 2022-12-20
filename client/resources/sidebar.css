@@ -1,0 +1,54 @@
+.sidebar {
+    grid-area : nav;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #CDF0EA;
+  }
+  .sidebar__logo {
+    place-items: center;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Mochiy Pop P one", sans-serif;
+  }
+  .sidebar__menu {
+    position: relative;
+  }
+  .sidebar__menu__item {
+    display: flex;
+    align-items: center;
+    place-content: flex-start;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555555;
+    transition: color 0.3s ease-in-out;
+  }
+  .sidebar__menu__item.active {
+    color: #fff;
+  }
+  .sidebar__menu__item__icon {
+    margin-right: 1rem;
+  }
+  .sidebar__menu__item__icon i {
+    font-size: 1.75rem;
+  }
+  .sidebar__menu__indicator {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    background-color: #308efe;
+    z-index: -1;
+    transform: translateX(-50%);
+    transition: 0.3s ease-in-out;
+  }
+
+  #sidemenu {
+    background-color: black;
+  }
